@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+            </div>
+            <div>
+                <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="Full Name Here"
+                    style="width: 500px"
+                    />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+            </div>
+            <div>
+                <input
+                    id="email"
+                    type="text"
+                    name="email"
+                    required
+                    placeholder="Email Here"
+                    style="width: 500px"
+                    />
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+            </div>
+            <div>
+                <input
+                    id="phone"
+                    type="text"
+                    name="phone"
+                    required
+                    placeholder="xxx-xxx-xxxx"
+                    style="width: 500px"
+                    />
+            </div>
+            <div>
+                <label for="preference">How do you prefer your response?</label>
+            </div>
+            <div>
+                <input
+                    id="emailReturn"
+                    name="preference"
+                    type="radio"
+                    value="email" />
+                <label for="emailReturn">Email</label>
+            </div>
+            <div>
+                <input
+                id="phoneReturn"
+                name="preference"
+                type="radio"
+                value="phone" />
+            <label for="emailReturn">Call/Text</label>
+            </div>
+            <div>
+                <label for="message">Your message here:</label>
+            </div>
+            <div>
+                <textarea id="message" name="message" style="width: 500px" cols="10"></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+  </body>
+</html>
